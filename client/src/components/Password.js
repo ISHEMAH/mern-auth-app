@@ -5,6 +5,7 @@ import styles from "../styles/Username.module.css"
 import {Toaster} from 'react-hot-toast'
 import { useFormik } from 'formik'
 import { passwordValidate } from '../helper/validate'
+
 const Password = () => {
   const formik = useFormik({
     initialValues:{

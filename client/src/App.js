@@ -26,7 +26,7 @@ const router = createBrowserRouter([
     element : <Profile/>
   },
   {
-    path:'/recovey',
+    path:'/recovery',
     element : <Recovery/>
   },
   {
