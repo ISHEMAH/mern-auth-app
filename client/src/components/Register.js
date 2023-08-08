@@ -32,7 +32,7 @@ const Register = () => {
     <div className='container mx-auto'>
     <Toaster position='top-center' reverseOrder={false}></Toaster>
       <div className='flex justify-center items-center h-screen'>
-        <div className={styles.glass}>
+        <div className={styles.glass} style={{width: "45%"}}>
             <div className='title flex flex-col items-center'>
                 <h4 className='text-5xl font-bold'>
                    Register
@@ -52,7 +52,7 @@ const Register = () => {
                     <input {...formik.getFieldProps('email')} className={styles.textbox} type='text' placeholder='Email'/>
                     <input {...formik.getFieldProps('username')} className={styles.textbox} type='text' placeholder='Username'/>
                     <input {...formik.getFieldProps('password')} className={styles.textbox} type='text' placeholder='Password'/>
-                    <button className={styles.btn} type='submit' >Let's go</button>
+                    <button className={styles.btn} type='submit' >Register</button>
                 </div>
                 <div className='text-center py-4'>
                     <span className='text-gray-500 '>Already have an account ? <Link className='text-red-500' to='/'>Login</Link></span>

@@ -24,6 +24,11 @@ export async function registerValidation(values){
   return errors;
 }
 
+export async function profileValidation(values){
+  const errors = emailVerify({}, values)
+  return errors;
+}
+
 function PasswordVerify(errors = {}, values){
     /* eslint-disable no-useless-escape */
     const specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
